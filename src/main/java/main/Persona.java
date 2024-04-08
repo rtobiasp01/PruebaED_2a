@@ -10,12 +10,12 @@ import java.util.Objects;
 
 public class Persona implements Comparable<Persona> {
 
-    private Nif nif;
-    private String nombre;
-    private char genero;
-    private LocalDate nacimiento;
+    public Nif nif;
+    public String nombre;
+    public char genero;
+    public LocalDate nacimiento;
 
-    public Persona() {
+    public Persona(String s, String pedro, String martinez) {
         nif = new Nif();
         nombre = "";
         genero = ' ';
@@ -23,7 +23,7 @@ public class Persona implements Comparable<Persona> {
     }
 
     public Persona(int nif) {
-        this();
+        this("55555555C", "Pedro", "Martinez");
         this.nif = new Nif(nif);
     }
 

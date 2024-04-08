@@ -12,8 +12,8 @@ import java.util.TreeSet;
  */
 public class Curso {
 
-    private String nombre;
-    private TreeSet<Persona> listaAlumnos;
+    public String nombre;
+    public TreeSet<Persona> listaAlumnos;
 
     protected String getNombre() {
         return nombre;
