@@ -23,26 +23,46 @@ public class Nif {
         return LETRAS[numero % 23];
     }
 
+    /**
+     *
+     */
     protected Nif() {
         this.numero = 0;
         this.letra = ' ';
     }
 
+    /**
+     *
+     * @param numero
+     */
     protected Nif(int numero) {
         this.numero = numero;
         this.letra = calcularLetra(numero);
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return numero + "-" + letra;
     }
 
+    /**
+     *
+     * @param numero
+     */
     protected void setNif(int numero) {
         this.numero = numero;
         this.letra = calcularLetra(numero);
     }
 
+    /**
+     *
+     * @param obj
+     * @return
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {

@@ -29,6 +29,9 @@ public class Persona implements Comparable<Persona> {
 
     /**
      * Constructor vacío de la clase Persona. Inicializa los atributos con valores por defecto.
+     * @param s
+     * @param juan
+     * @param gomez
      */
     public Persona(String s, String juan, String gomez) {
         nif = new Nif();
